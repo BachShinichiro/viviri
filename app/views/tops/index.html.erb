@@ -1,0 +1,30 @@
+	<div class="contents">
+		<section id="sec01">
+			<h2>NEWSSS</h2>
+      <p><%= link_to '【2021.4.3：viviriオフィシャルサイトがオープン！】
+',     about_index_path %></p>
+      <p><%= link_to '【2021.4.3：人間臭いアイドルオーディション開催！】
+',     audition_index_path %></p>
+
+		</section>
+		<section id="sec02">
+			<h2>AUDITION</h2>
+      <h3>「NEXT IDOL GRANDPRIX 2020」総合3位の杠葉あずさプロデュース<br>【人間臭いアイドル】の初期メンバーオーディションを開催します。
+</h3><br>
+			<p>人間臭く、必死に、生きるためにアイドルしたい人を募集！<br>
+合格後はデビューに合わせて各種メディア出演やソロプロデュースの可能性があります。<br>
+作詞、作曲、動画編集、振り付け、衣装デザインなど特技や技術を活かせる人は別途報酬あり！</p>
+    <p><%= link_to '\詳細はこちらから/',     audition_index_path %></p>
+    <%= video_tag "viviri.mp4", autoplay: true, muted: true, loop: true ,controls: true%>
+		</section>
+    <section id="sec03">
+			<h2>COMPANY</h2>
+      <p>合同会社viviri
+174-0065 東京都板橋区若木1丁目12-2 Fコート若木 B2号</p>
+
+		</section>
+		<section id="sec03">
+			<h2>CONTACT</h2>
+			<p><%= mail_to 'info@viviri.jp',  'info@viviri.jp' %></p><br><br><br>
+		</section>
+	</div>

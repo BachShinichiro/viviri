@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Viviri</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= favicon_link_tag('favicon.ico') %>
+  </head>
+
+  <body>
+    <%= link_to image_tag("top-img.png"), "/" %>
+	<nav id="mainnav">
+		<p id="menuWrap"><a id="menu"><span id="menuBtn"></span></a></p>
+		<div class="panel">
+			<ul>
+				<li><a href="#sec00">TOP</a></li>
+				<li><a href="#sec01">NEWS</a></li>
+				<li><%= link_to "AUDITION" ,audition_index_path%></li>
+				<li><a href="#sec02">COMPANY</a></li>
+				<li><a href="#sec03">CONTACT</a></li>
+			</ul>
+		</div>
+	</nav>
+    <%= yield %>
+  <!-- // footer -->
+	<footer id="footer">
+		Copyright ©　2021 bibiri All Rights Reserved.
+	</footer>
+  </body>
+</html>
