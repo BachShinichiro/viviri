@@ -23,6 +23,8 @@ body {
   display: flex;
   flex-flow: column;
   min-height: 100vh;
+	padding-bottom: 50px;
+	position: relative;
 }
 
 
@@ -106,6 +108,9 @@ video{
   font-family: Georgia, serif;
   background-color: black;
   color: #eeeeee;
+	bottom: 0;
+	position: absolute;
+	width: 100%;
 }
 
 
