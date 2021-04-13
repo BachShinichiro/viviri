@@ -49,6 +49,7 @@ section p {
   background-color:rgba(255,255,255,0.91);
   background-blend-mode:lighten;
   text-align: center;
+	height: 100vh;
 }
 
 h2 {
@@ -78,9 +79,10 @@ h3 {
 ------------------------------------------------------------*/
 
 video{
-  width: 560px;
+  max-width: 560px;
   height: 315px;
   cursor: url("volume.png") 2 2, pointer;
+	width: 100%;
 }
 
 
@@ -363,12 +365,18 @@ section h2{
 		padding: 0 3%;
 		vertical-align: top;
 	}
+	.top-img{
+		display: none;
+	}
 }
 
 @media only screen and (max-width: 640px){
 	#map iframe{
 	  width: 96% !important;
 		left: 2%;
+	}
+	.top-img-small{
+		display: none;
 	}
 }
 
@@ -501,9 +509,6 @@ section h2{
 	}
 	#sec01 h2{
 		padding: 70px 0 20px;
-	}
-	.vMid{
-		padding: 0 20px;
 	}
   
 }
