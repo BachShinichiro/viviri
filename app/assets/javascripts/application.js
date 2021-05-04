@@ -26,7 +26,7 @@ $(function(){
 		winH = $(window).height(),
 		nav = $('#mainnav ul a'),
 		curPos = $(this).scrollTop();
-	
+
 	if (winW < 880){
 		var headerH =0;
 	}
@@ -34,7 +34,6 @@ $(function(){
 		var headerH =63;
 	}
 
-	
 	document.addEventListener("turbolinks:load"
 , (nav).on('click', function(){
     nav.removeClass('active');
@@ -50,7 +49,7 @@ $(function(){
 		}
     return false;
 	}));
-	
+
 
 
 	$('.panel').hide();
@@ -62,7 +61,7 @@ $(function(){
     $(this).next().slideToggle();
 		$('#menuBtn').removeClass('close');
 	});
-  
+
 	$(window).on('scroll', function(){
     var curPos = $(this).scrollTop();
 		if(curPos > 80){

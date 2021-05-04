@@ -4,7 +4,6 @@
     <title>Viviri</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     <meta name="viewport" content="width=device-width">
@@ -12,20 +11,20 @@
   </head>
 
   <body>
-    <%= link_to image_tag("top-img.png",class:"top-img"), "/" %>
-    <%= link_to image_tag("top-img-small.png",class:"top-img-small"), "/" %>
 	<nav id="mainnav">
 		<p id="menuWrap"><a id="menu"><span id="menuBtn"></span></a></p>
 		<div class="panel">
 			<ul>
-				<li><a href="#sec00">TOP</a></li>
-				<li><a href="#sec01">NEWS</a></li>
+				<li><%= link_to 'Top', root_path(anchor: '#sec00') %></li>
+				<li><%= link_to 'NEWS', root_path(anchor: '#sec01') %></li>
 				<li><%= link_to "AUDITION" ,audition_index_path%></li>
-				<li><a href="#sec02">COMPANY</a></li>
-				<li><a href="#sec03">CONTACT</a></li>
+				<li><%= link_to 'COMPANY', root_path(anchor: '#sec02') %></li>
+				<li><%= link_to 'CONTACT', root_path(anchor: '#sec03') %></li>
 			</ul>
 		</div>
 	</nav>
+    <%= link_to image_tag("top-img.png",class:"top-img"), "/" %>
+    <%= link_to image_tag("top-img-small.png",class:"top-img-small"), "/" %>
     <%= yield %>
   <!-- // footer -->
 	<footer id="footer">

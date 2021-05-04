@@ -26,7 +26,6 @@ body {
 	position: relative;
 }
 
-
 a{
 	color: #0066ff;
 	text-decoration: none;
@@ -82,9 +81,6 @@ video{
 	width: 100%;
 }
 
-
-
-
 #slogan h1{
 	font-size: 40px;
 	margin-bottom: 20px;
@@ -95,7 +91,6 @@ video{
 	font-size: 20px;
 	font-weight:normal;
 }
-
 
 /* フッター
 ------------------------------------------------------------*/
@@ -111,7 +106,6 @@ video{
 	position: absolute;
 	width: 100%;
 }
-
 
 /* 共通
 ------------------------------------------------------------*/
@@ -140,6 +134,7 @@ section h2{
 	width: 100%;
   	margin: 20px 0 20px 0;
 }
+
 #sec02{
 	max-width: 1170px;
 	margin: auto;
@@ -151,14 +146,11 @@ section h2{
 
 /* SEC01 VISION
 ------------------------------------------------------------*/
-
 .vision{
 	width: 60%;
 	margin: 0 auto;
 	padding-bottom: 80px;
 }
-
-
 /* SEC02 MESSAGE
 ------------------------------------------------------------*/
 .wrap{
@@ -197,8 +189,6 @@ section h2{
 	-webkit-background-size: cover;
 	color: #fff;
 }
-
-
 /* SEC05 PROFILE
 ------------------------------------------------------------*/
 #sec05{
@@ -247,8 +237,6 @@ section h2{
 	height: 100% !important;
 	border: 0;
 }
-
-
 /* RESPONSIVE 設定
 ------------------------------------------------------------*/
 
@@ -290,6 +278,7 @@ section h2{
 		padding-right: 30px;
     background-color: #fff;
     height: 0;
+		color: #eeeeee;
 	}
 
 	#mainnav li{
@@ -297,6 +286,7 @@ section h2{
 		padding: 45px 10px 20px;
 		font-size: 14px;
 		font-weight: 300;
+		color: #eeeeee;
 	}
 	
   #mainnav a{
@@ -307,7 +297,6 @@ section h2{
 		background: #fff;
 		border-bottom: 1px solid #d1d1d1;
     opacity: 0.5;
-
 	}
 	
 	#mainnav.changeNav li{
@@ -353,7 +342,6 @@ section h2{
 	#sec05{
 		padding-top: 120px;
 	}
-
 }
 
 @media only screen and (min-width: 641px){
