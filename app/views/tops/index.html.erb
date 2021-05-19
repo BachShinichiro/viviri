@@ -2,7 +2,7 @@
 		<section id="sec01">
 			<h2>NEWSSS</h2>
 			<% @blogs.each do |blog| %>
-    <p>【<%= blog.created_at.to_s(:datetime_jp) %> ：<%=link_to blog.title %>】</p>
+    <p>【<%= blog.created_at.to_s(:datetime_jp) %> ：<%=link_to blog.title, blog_path(blog.id)%>】</p>
 <% end %>
       <p>【2021.4.3：<%= link_to 'viviriオフィシャルサイトがオープン！
 ',     about_index_path %>】</p>

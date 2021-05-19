@@ -9,7 +9,9 @@ class BlogsController < ApplicationController
     Blog.create(blog_params)
     redirect_to tops_path
   end
-  
+  def show
+    @blog = Blog.find(params[:id])
+  end
   
   private
   def blog_params
