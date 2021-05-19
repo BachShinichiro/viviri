@@ -1,10 +1,13 @@
 	<div class="contents">
 		<section id="sec01">
 			<h2>NEWSSS</h2>
-      <p><%= link_to '【2021.4.3：viviriオフィシャルサイトがオープン！】
-',     about_index_path %></p>
-      <p><%= link_to '【2021.4.3：人間臭いアイドルオーディション開催！】
-',     audition_index_path %></p>
+			<% @blogs.each do |blog| %>
+    <p>【<%= blog.created_at.to_s(:datetime_jp) %> ：<%=link_to blog.title, blog_path(blog.id)%>】</p>
+<% end %>
+      <p>【2021.4.3：<%= link_to 'viviriオフィシャルサイトがオープン！
+',     about_index_path %>】</p>
+      <p>【2021.4.3：<%= link_to '人間臭いアイドルオーディション開催！
+',     audition_index_path %>】</p>
 
 		</section>
 		<section id="sec02">
